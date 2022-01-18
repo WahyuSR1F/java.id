@@ -1,0 +1,37 @@
+package com.tutorial;
+
+import java.util.Scanner;
+
+public class TugasUAS {
+    public static void main(String[] args) {
+        System.out.println("Program SARVID Dimulai  (PROGRAM SAHRI DAVIQ)\n==============************================");
+        System.out.println("@---------------------------------------------------------------------------------------------------------@");
+        System.out.println("| Seorang Programer ingin menampilkan baris deret kelipatan yang dimana hasinya tidak 0 dan minus ?       |");
+        Scanner input = new Scanner(System.in);
+        System.out.print("| Kelipatan Berapa: ");
+        int kelipatan = input.nextInt();
+        System.out.print("| Batas Sampai Berapa:");
+        int batas = input.nextInt();
+        System.out.println("| Melakukan Perhitungan                                                                                   |");
+        if (kelipatan > 0){
+            System.out.println("|  //  hasil kelipatan //                                                                                 |");
+            System.out.print("[");
+            for (int i = batas; i ; i++){
+
+                int hasil = i * kelipatan;
+                System.out.print( hasil + ",");
+
+            }
+        } else {
+            if (kelipatan == 0){
+                System.out.println(" Tidak Bisa, Hasil akan sama dengan = 0");
+            } else {
+                System.out.println(" Tidak Bisa, Hasil Kemungkinan Negatif = (-)");
+            }
+
+
+        }
+        System.out.println("\nProgram Selesai \n==========================");
+    }
+}
+
